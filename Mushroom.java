@@ -29,7 +29,6 @@ public class Mushroom extends AllObjects {
         // metodo para o cogumelo cair a cada "velDown" determinado
         fall();
         removeMushroom();
-        // Add your action code here.
     }
 
     public void removeMushroom() {
@@ -41,7 +40,7 @@ public class Mushroom extends AllObjects {
             Greenfoot.playSound("sounds/eat.mp3");
             // serve para instanciar a variavel ponto da classe Score
             Score.add();
-            // se o papagaio tocar no cogumeloremove o mesmo
+            // se o papagaio tocar no cogumelo remove o mesmo
             ((Florest) getWorld()).removeObject(this);
         }
 
